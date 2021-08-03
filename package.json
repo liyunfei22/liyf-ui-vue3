@@ -15,7 +15,9 @@
   },
   "scripts": {
     "release": "standard-version",
-    "commit": "git cz"
+    "commit": "git cz",
+    "start:dumi": "dumi dev",
+    "build:dumi": "lerna run build && dumi build"
   },
   "config": {
     "commitizen": {
@@ -29,5 +31,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "version": "0.0.0"
 }
