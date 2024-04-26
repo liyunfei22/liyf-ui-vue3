@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run dev -F example"
+    "dev": "pnpm run --filter 'example' dev"
   },
   "keywords": [],
   "author": "",
