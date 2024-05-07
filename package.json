@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run --filter 'example' dev"
+    "dev": "pnpm run --filter 'examples' dev",
+    "build": "pnpm run --filter 'examples' build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "less": "^4.2.0",

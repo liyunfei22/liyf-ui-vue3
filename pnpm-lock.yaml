@@ -24,6 +24,20 @@ importers:
         specifier: ^3.4.25
         version: 3.4.25(typescript@5.4.5)
 
+  examples:
+    dependencies:
+      liyf-ui-vue3:
+        specifier: workspace:^
+        version: link:../packages/components
+
+  packages/components:
+    dependencies:
+      '@liyf-ui-vue3/utils':
+        specifier: workspace:^
+        version: link:../utils
+
+  packages/utils: {}
+
 packages:
 
   /@babel/helper-string-parser@7.24.1:
