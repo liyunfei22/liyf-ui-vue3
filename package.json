@@ -1,36 +1,20 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "commitizen": "^4.2.4",
-    "commitlint-config-cz": "^0.13.2",
-    "cz-customizable": "^6.3.0",
-    "husky": "^7.0.1",
-    "lerna": "^4.0.0",
-    "standard-version": "^9.3.1"
-  },
+  "name": "liyf-ui-vue3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "release": "standard-version",
-    "commit": "git cz",
-    "start:dumi": "dumi dev",
-    "build:dumi": "lerna run build && dumi build"
+    "dev": "pnpm run --filter 'examples' dev",
+    "build": "pnpm run --filter 'examples' build"
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-customizable"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "version": "0.0.0"
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "less": "^4.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vue": "^3.4.25"
+  }
 }
