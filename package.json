@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm run --filter 'examples' dev",
-    "build": "pnpm run --filter 'examples' build"
+    "build": "pnpm run --filter 'liyf-ui-vue3' build"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
     "less": "^4.2.0",
     "typescript": "^5.4.5",
     "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.9.1",
     "vue": "^3.4.25"
   }
 }
