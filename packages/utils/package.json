@@ -1,12 +1,11 @@
 {
-  "name": "@liyf-ui-vue3/utils",
+  "name": "@big-fly/utils",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

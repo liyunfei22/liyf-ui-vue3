@@ -1,21 +1,38 @@
 {
-  "name": "liyf-ui-vue3",
+  "name": "big-fly",
   "version": "1.0.0",
+  "private": true,
   "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pnpm run --filter 'examples' dev",
-    "build": "pnpm run --filter 'liyf-ui-vue3' build"
+    "dev": "pnpm run --filter 'play' dev",
+    "typecheck:node": "tsc -p tsconfig.node.json --noEmit",
+    "build": "pnpm run --filter 'liyf-ui-vue3' build",
+    "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "dependencies": {
+    "@big-fly/components": "workspace:^",
+    "@big-fly/theme-chalk": "workspace:^",
+    "@big-fly/utils": "workspace:^"
+  },
   "devDependencies": {
+    "@types/node": "^20.12.11",
     "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^9.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^8.0.0",
     "less": "^4.2.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
     "typescript": "^5.4.5",
     "vite": "^5.2.10",
     "vite-plugin-dts": "^3.9.1",
     "vue": "^3.4.25"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
   }
 }
